@@ -1,0 +1,17 @@
+body {
+    overflow-x: hidden;
+}
+
+div.scrollmenu {
+    overflow: auto;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
