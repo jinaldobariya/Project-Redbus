@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets online</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="css\style.css">
+
+    
+
+</head>
+
+<body>
+
+    <!-- Navigation section -->
+    <nav class="navbar navbar-expand-sm bg-danger ">
+       
+        <img src="images\logo.png" alt="" class="logo ms-5">      
+        
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">BUS TICKETS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">rYde</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">redRail<sup>New</sup></a>
+          </li>
+        </ul>
+        
+          <ul class="navbar-nav sublist">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Print/SMS Ticket</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Cancel Ticket</a>
+            </li>
+            <li class="nav-item">
+                <i class='fa fa-user' style='font-size:36px;color:white'></i>
+            </li>                  
+         
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbardrop" data-bs-toggle="dropdown"></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Sign In/Sign Up</a>
+                </div>
+            </li>
+        </ul>
+    </nav>   
+
+     <!-- Navigation section completed -->
+
+     <!-- Header image  -->
+    <div class="container-fluid">
+        <div class="row" style="background-color: #4a4a4a;">
+            <div class="col-2 d-flex" >
+                <a href="#" target="_self" class="ms-5 text-white text-decoration-none list">Home</a> 
+                <i class="fa fa-angle-right ms-1 mt-1" style="font-size:15px;color:white"></i>
+                <a href="#" target="_self" class="ms-1 text-danger text-decoration-none text list">Bus Tickets</a> 
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 m-0 p-0">
+                <img src="images\headerimg.jpg" alt="" class="header">
+            </div>
+            <div class="col-12 subpart text-center">
+                <p class="text1 text-light display-6">Bus Ticket Booking Online</p>
+            </div>
+
+
+            <div class="row d-flex search me-0 p-0 justify-content">
+                <div class="col-8">
+                    <input type="text" placeholder="FROM" name="from">
+                
+                    <input type="text" placeholder="TO" name="to">
+                
+                    <input type="date" placeholder="ONWARD DATE" name="date">
+                
+                    <button type="submit" class="btn btn-danger">Search Buses</button>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+<!-- Header image section completed -->
+
+<!-- Offers section -->
+
+    <div class="container-fluid ">
+        <div class="row bg-light">
+            <div class="col-md-4">
+                <div class="card text-center align-content-center ms-2">
+                    <div class="card-text mt-2">Save up to Rs 250 on Bus tickets</div>
+                    <img src="images/offer1.png" class="card-img-top" style="width: 250px; margin-left: 50px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Limited Period Offer</h5>
+                        <p>Use code FIRST</p>
+                    </div>
+                </div>		
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center align-content-center">
+                    <div class="card-text mt-2 ">Save up to Rs 300 on AP,TS routes</div>
+                    <img src="images/offer2.png" class="card-img-top" style="width: 250px; margin-left: 50px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Limited Period Offer!</h5>
+                        <p>Use code SUPERHIT</p>
+                    </div>
+                </div>		
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center align-content-center">
+                    <div class="card-text mt-2">Save up to Rs 200 in Delhi & North India</div>
+                    <img src="images/offer3.png" class="card-img-top" style="width: 250px; margin-left: 50px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Limited Period Offer!</h5>
+                        <p>Use code RB200</p>
+                    </div>
+                </div>		
+            </div>
+        </div>
+    </div>
+    <!-- Offers section completed -->
+
+<br>
+
+    <!-- Content Section -->
+    <div class="container">
+        <center><h4> <strong>Why redBus  for Bus Booking?</strong> </h4></center>
+
+        <div class="row">
+            <span class="border" style="width: 380px; height: 400px;">
+                <div class="col-12 mt-4">                    
+                    <div class="cimg">
+                        <img src="images/customer_care.png" alt="">
+                    </div>
+                    <div class="text text-center mt-3">
+                        <p>SUPERIOR CUSTOMER SERVICE</p>
+                    </div>
+                    <div class="subtext text-center">
+                        <p>We put our experience and relationships to good use and are available to solve your bus travel issues.</p>
+                    </div>                    
+                </div>
+            </span>
+            <span class="border" style="width: 380px; height: 400px;">
+                <div class="col-12 mt-4">                    
+                    <div class="cimg">
+                        <img src="images/lowest_Fare.png" alt="">
+                    </div>
+                    <div class="text text-center mt-3">
+                        <p>LOWEST PRICES</p>
+                    </div>
+                    <div class="subtext text-center">
+                        <p>We always give you the lowest price with the best partner offers.</p>
+                    </div>                    
+                </div>
+            </span>
+            <span class="border" style="width: 380px; height: 400px;">
+                <div class="col-12 mt-4">                    
+                    <div class="cimg">
+                        <img src="images/benefits.png" alt="">
+                    </div>
+                    <div class="text text-center mt-3">
+                        <p>UNMATCHED BENEFITS</p>
+                    </div>
+                    <div class="subtext text-center">
+                        <p>We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</p>
+                    </div>                    
+                </div>
+            </span>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    
+        <center><h4> <strong>How to Book a Bus Ticket Online on redBus?</strong> </h4></center>
+        <br>
+        <div class="container">
+            <div class="row ">
+                <div class="col-12">
+                    <p class="steps mb-0">A to Z of Booking Online Bus Tickets</p>
+                    <ul>
+                        <li class="steps">Enter the Source and Destination locations in the “From” and “To” tab respectively.</li>
+                        <li class="steps">Enter the “Date of Journey” and hit the “Search” button to check available bus tickets online.</li>
+                        <li class="steps">Select a bus of your choice from the list of buses that are displayed.</li>
+                        <li class="steps">Select a seat, boarding, and dropping points and hit “Proceed to Book” for final bus booking.</li>
+                        <li class="steps">Fill in the “Passenger Information” and “Contact Information”.</li>
+                        <li class="steps">You can even choose to insure your bus booking so that you will be covered in case of an accident or loss of luggage and then click “Proceed to Pay”.</li>
+                        <li class="steps">Enter the offer code (if applicable), select your mode of payment and complete the payment procedure for bus tickets online.</li>
+                        <li class="steps">Once this is done, you will receive an M-ticket on your mobile and an e-ticket on the email ID that was entered under “Contact Information”.</li>
+                    </ul>
+                </div>
+            </div>           
+        </div>
+
+
+
+        <div class="container" style="background-color: #ededed; color: black;">
+            <center><h4 class="pt-5 mt-5"> <strong>Book Bus Tickets Online in India with redBus</strong> </h4></center>
+
+            <div class="row">
+                <div class="col-12" style=" padding: 0px 150px ; font-size: 15px;">
+                    <p>India's largest company for bus ticket booking, redBus, offers an easy-to-use online platform, thousands of bus operators to choose from, and plenty of offers on bus ticket booking to make road journeys super convenient for travelers. A leading platform for booking bus tickets, redBus has driven the country's bus booking journey over the past <strong>16+ years</strong>  through thousands of bus operators and routes. Striving to reach new heights when it comes to online bus reservations in India, redBus has become the perfect tool to use to have a smooth bus ticket booking experience.</p>
+                    <p>
+                        Anybody can use the official website of redBus or download the <strong> user-friendly app </strong> to book bus tickets from anywhere in India. You can easily make an online bus booking from the comfort of your home, office, or vehicle. With these successful USPs, <span style="color: #d84e55;"> redBus </span> has expanded bus services internationally to countries like <strong> Singapore, Malaysia, Indonesia, Peru, Colombia, and Europe</strong>.
+                    </p>
+                    <h4> <strong>Book Bus Tickets Online in India on redBus</strong> </h4>
+                    <p>
+                        Booking a bus ticket online with redBus is now more convenient than ever. After setting the industry standards other competitors have struggled to reach, redBus has raised the bar again by providing a world-class bus booking experience. You can follow these simple steps to book your next bus ticket with redBus:
+                    </p>
+
+                    <br><br><br><br><br>
+                    <img src="images/book-bus-tickets-online-india.jpg" alt="" width="100%;" >
+
+                    <h5 class=" mt-1"> <strong>Why book bus tickets through redBus?</strong> </h5>
+                    <p class="para mb-0">
+                        redBus's online bus booking services provide many advantages over its offline prehistoric booking modes. Firstly, booking a bus ticket through a travel agent or at a counter is in the past. People are recognizing the advantages of online bus ticket booking now.
+                    </p>
+                    <p class="para mb-0">
+                        redBus's online bus ticket booking process has eliminated many problems that people used to face. For example, at a counter, people would have to first stand in a queue in front of a particular bus operator. Once they reach the counter, they must book a seat among the available seats. If a seat isn't available on the bus of their choice, the sad customer would have to stand in another queue in front of another bus operator.
+                    </p>
+                    <p class="para mb-0">
+                        With redBus, customers can check out every bus available on any given route in India. They do not have to stand in a queue and accept the price and seat given to them by the travel agent or the ticket clerk behind the counter. Customers can view every detail of the bus, including updated pictures, the type of bus, amenities offered, and much more, on the redBus website and app. Customers can even avail of exclusive discounts while making their bus reservations which are provided by bus booking sites like redBus that cannot be matched by any value offered by a travel agent or a counter.
+                    </p>
+
+                    <h5> <strong>On-Time Guarantee with redBus</strong> </h5>
+                    <p class="mb-0">
+                        When it comes to Online bus ticket booking, redBus should be your one-stop destination. Here is the list of reasons why you should opt for the redBus:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong> Bus On Time: </strong>Customers will receive a <strong> 25% refund</strong> on their bus ticket costs if the bus they need to travel in is delayed by 30 minutes.
+                        </li>
+                        <li>
+                            <strong>No Bus Cancellation:</strong>If you made an online bus booking through redBus and the bus operator cancels the bus without making any alternate arrangements, the customer can receive a <strong> 150% refund </strong> on their bus ticket costs.
+                        </li>
+                        <li>
+                            <strong>Alternate Assurance: </strong> If a bus breaks down during the journey, the customers traveling on the bus would have to wait for an alternate arrangement to be made by the bus operator. If this arrangement is not made within 6 hours from the time of the breakdown, the customers will be eligible for a <strong> 300% refund </strong> on their bus tickets.
+                        </li>
+                    </ul>
+
+
+                    <h5 class=" mt-0"> <strong>Payment Modes for Bus Ticket Booking on redBus</strong> </h5>
+                    <p>
+                        redBus gives you the flexibility of booking bus tickets as per your choice and preference! So whether you like to travel in AC or want a sleeper bus for an overnight journey, redBus has it all. Here are some popular choices of buses you can book online.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>AC Bus:</strong>Booking bus tickets for AC buses is a perfect option for travelers planning a long-distance journey in warmer areas of India. AC buses make sure that your journey is comfortable and cozy!
+                        </li>
+                        <li>
+                            <strong>Non-AC Bus:</strong>Online bookings on non-AC buses are for those looking for affordable bus options which wouldn't travel long distances. 
+                        </li>
+                        <li>
+                            <strong>Volvo AC Seater Bus:</strong>Volvo buses are one of the most popular choices for travelers in India on both short and long-distance journeys. 
+                        </li>
+                        <li>
+                            <strong>Volvo AC Bus:</strong>From the southern parts of India to the north, Volvo AC bus booking availability ensures that journeys are super-comfortable. 
+                        </li>
+                        <li>
+                            <strong>AC Sleeper Bus:</strong>Bus bookings on AC sleeper buses are the right choice for long-distance or overnight travel, with the best-in-class comfort.
+                        </li>
+                        <li>
+                            <strong>Sleeper Seater Bus:</strong>Sleeper seater bus bookings when you are tired and are looking to rest while traveling.
+                        </li>
+                        <li>
+                            <strong>AC Luxury Bus:</strong>The name itself is enough! Opt for this bus category while booking bus tickets online if the best luxury on wheels is what your heart wants.
+                        </li>
+                        <li>
+                            <strong>Deluxe Bus:</strong>Enjoy luxury road journeys on a budget when you opt for this category while booking bus tickets online.
+                        </li>
+                        <li>
+                            <strong>Sleeper  Bus:</strong>Suitable for budget traveling long distances, this category is quite popular with young people itching to explore the country.
+                        </li>
+                        <li>
+                            <strong>Smart Bus:</strong>If you're worried about the long-interval breaks during road journeys by bus, worry no more. Smart buses come with in-built toilets that are practical and ideal for long-distance trips.
+                        </li>
+                    </ul>
+
+
+                    <br>
+                    <h5> <strong>Track your Bus with the 'Track My Bus' Feature</strong> </h5>
+                    <p>
+                        Have you ever reached your boarding point and wondered about the whereabouts of your bus? Have you ever had a heated conversation with the bus operator about the location of your bus? redBus has addressed these worries more with the "Track My Bus" feature for live bus tracking. With this, customers can track their bus on their app to help them plan their journey to the boarding point or to get off at their desired drop-off point.
+                    </p>
+                    <p>
+                        If the passenger has to be picked up from the drop-off point, they can always share the live location of the bus to help them plan their commute to the drop-off location. This feature also adds to improving the safety standards on the bus. Family members can breathe a sigh of relief as they can always keep track of the location of the bus their loved ones are traveling in. Visit 'track my bus' and enter the ticket number and registered email ID to track the concerned bus.
+                    </p>
+
+                    <br>
+
+                    <h5> <strong>M-ticket and its advantages</strong> </h5>
+                    <p>
+                        Have you ever arrived at your boarding point only to realize you had left your ticket home? If you have, you know how frustrating and stressful that can be - especially if it's for a holiday trip you took time off work for or made special arrangements in advance. The M-ticket initiative by redBus was a game-changer in many ways. It not only put an end to the physical form of a ticket or needs a printout of your bus ticket, but it also ensured that passengers wouldn't have to rush back home if they forgot their bus ticket.
+                    </p>
+                    <p>
+                        Once a passenger completes their bus ticket booking procedure, redBus will confirm that the booking has been made. The bus ticket is then sent to the customer's registered mobile number in the form of an M-ticket, and it's also sent to the customer's registered email ID. With redBus' advanced interface, this process takes a few milliseconds to complete.
+                    </p>
+                    <p>
+                        Customers are advised to carry a government-approved identity card that can be used to prove their identity when they have to board their bus.
+                    </p>
+                    <p>
+                        redBus offers online bus ticket booking options and also promotes hassle-free bus travel across India. Undergo a quick bus ticketing procedure, choose suitable bus seats, bus type, and bus operator, then complete your secured online payment in just a few seconds. redBus develops an incredible traveling experience from selecting bus types, boarding points, and operators to bus reservations at the lowest fares. 
+                    </p>
+                    <p>
+                        redBus also provides exciting online discounts and cashback upon bus booking, making your transactions more rewarding and no more waiting for long hours at bus counters. So go ahead and order bus tickets to have a hassle-free booking experience. There are more than 2300+ operators listed on the redBus site and app. They provide services throughout most of the cities in India.
+                    </p>
+                    <p>
+                        Whether it's about avoiding the long queue at bus counters or knowing every detail about the available bus tickets, booking a bus on a redBus portal has many benefits. For example, customers can avail of a range of exclusive discounts and offer while booking a bus ticket online.
+                    </p>
+                    <p>
+                        Don't wait any longer; book your bus tickets on redBus today! You can choose from various bus types and routes throughout India at an affordable price. With our user-friendly website and app, booking your tickets has never been easier. So why wait? Book your bus tickets today!
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+
+        <div class="container">
+            <center><h4> <strong>What's New in Bus booking on redBus?</strong> </h4></center>
+            <div class="row">
+                <div class="col-12" style=" padding: 0px 150px ; font-size: 15px;">
+                    <h5> <strong>Book a Primo Bus Ticket</strong> </h5>
+                    <p  class="mb-0">
+                        redBus has also launched <strong><span style="color: #d84e55;"> Primo bus </span></strong>services, where passengers can enjoy traveling in high-rated buses with best-in-class services. While looking for bus tickets on the desired route, customers can check the <strong> Primo tag </strong> to choose this excellent service. From hygiene standards to on-time service and comfort, passengers can get many benefits from bus booking from Primo buses.
+                        <br> Primo is founded on three pillars designed to create the best-in-class bus travel experience.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Safe</strong><br>
+                            redBus Primo buses are known as "safer buses" and adhere to the highest hygiene standards. They are equipped with first-aid kits, fire extinguishers, safety markers, and more.
+                        </li>
+                        <li>
+                            <strong>On-time</strong><br>
+                            The staff is trained and makes the best effort to help you reach your destination on time and safely.
+                        </li>
+                        <li>
+                            <strong>Comfortable</strong><br>
+                            Primo buses are top-rated and always assure priority customer service and personalized attention.
+                        </li>
+                    </ul>
+
+                    <br>
+                    <h5> <strong>rYde - Rent Cabs, Tempo Travellers & Buses</strong> </h5>
+                    <p  class="mb-0">
+                        Looking to book an outstation cab, hourly rental service for traveling within the city, or airport transfers? rYde is your one-stop solution! redBus has introduced rYde for travelers looking for intra and intercity cabs with professional drivers and great prices. rYde also offers 24/7 customer support, safe and hygienic vehicles, GPS tracking, and a travel safety kit. Passengers can choose from SUVs, Sedans, Hatchbacks, tempo travelers, mini buses, and large buses.
+                    </p>                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" style="background-color: #ededed; color: black;">
+            <center><h4 class="pt-5 mt-5"> <strong>Free Cancellation and Rescheduling of Bus Tickets</strong> </h4></center>
+
+            <div class="row">
+                <div class="col-12" style=" padding: 0px 150px ; font-size: 15px;">
+                    <p>
+                        One of the advantages of buying a bus ticket online with redBus is the ease with which bus tickets may be canceled and rescheduled. redBus offers a 100% refund on cancellation if it is attributable to either redBus or the bus operator. <span style="color: #d84e55;"> Bus ticket cancellation can be made </span>either through the user’s login on the redBus’s website or mobile app or by calling on the customer care number. <br>
+                        Any cancellation is subject to such cancellation charges as mentioned on the ticket. However, suppose instead of cancellation, one wants to postpone their journey. In that case, redBus also offers an option to <span style="color: #d84e55;"> reschedule bus booking</span> to a future date by simply paying the difference price, if applicable.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style=" padding: 0px 150px ; font-size: 15px;">
+                    <h4> <strong>News and Latest Updates on Bus Booking and Travels Operators</strong> </h4>
+
+                    <p class="mb-0"> <strong>Last Updated on 01-12-2022</strong></p>
+                    <ul>
+                        <li>
+                            APSRTC announced special discounts on Sankranti Bus Tickets booking, Check Offers Now.
+                        </li>
+                        <li>
+                            TSRTC reduces metro combo ticket prices from Rs 20 to Rs 10 in Hyderabad.
+                        </li>
+                        <li>
+                            MSRTC added additional 7000 new buses to its fleet, out of that 5000 buses are electric buses and 2000 are diesel buses. They are also planning to convert these 2000 buses into LNG ( Liquified Natural Gas) in phases.
+                        </li>
+                        <li>
+                            APSRTC operates special, super luxurious services for Hyderabad to Pancharamalu. This service covers Amaramam, Bhimavaram, Ksheeramam, Somaramam, and Kumarbhimaramam.
+                        </li>
+                        <li>
+                            Andhra Pradesh State Road Transport Corporation (APSRTC) started operating special buses to Sabarimala.
+                        </li>
+                        <li>
+                            UPSRTC install the antisleep device in 5 buses for the trail. The equipment is designed to notify the control room if the driver falls asleep, but not before attempting to wake him up.
+                        </li>
+                        <li>
+                            To improve sustainability in Guwahati, ASTC plans to get 300 eco-friendly electric buses by 2023.
+                        </li>
+                        <li>
+                            APSRTC won the SKOCH award for Digital Payments platform for citizen services and payment to vendors and suppliers in 2022
+                        </li>
+                        <li>
+                            TSRTC offer Hyderabad darshan special buses where you can visit seven places in just 12 hrs.
+                        </li>
+                        <li>
+                            APSRTC plans to replace all 11,000 diesel buses with AC electrical buses.
+                        </li>
+                        <li>
+                            Olectra delivered ten e-buses to the APSRTC on Tuesday in the Alipiri deport. The CM of Andhra Pradesh officially announces this news.
+                        </li>
+                        <li>
+                            KSRTC Kerala plans to launch Shatabdhi Inspired, an end-to-end, low-floor, nonstop AC bus service from Kochi to Trivandrum.
+                        </li>
+                        <li>
+                            UP Government will soon launch 2000 UPSRTC buses in Uttar Pradesh on different routes and 150 electric buses in Ghaziabad.
+                        </li>
+                        <li>
+                            RSRTC announced an integrated bus stand in Jaipur to boost connectivity between different bus stands. Through PPP mode, Sindhi Camp will be connected to the other bus stands on Tonk road, Agra road, Ajmer road, and Delhi and Sikar road.
+                        </li>
+                        <li>
+                            A new temporary bus terminal is to come up at Solar in Erode and will be fully functional by next month.
+                        </li>
+                        <li>
+                            TSRTC arranges special bus services to Kuntala and Pochera waterfall at affordable prices in the Adilabad district.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+
+        <div class="container">
+            <center><h4> <strong>Frequently Asked Questions about Bus Booking Online
+            </strong> </h4></center>
+            <br>
+            <div class="row">
+                <div class="col-6" style="padding: 0px 50px ;font-size: 16px;">
+                    <h5><strong>Q: Why should I make online bus booking through redBus?</strong></h5>
+                    <p>
+                        A: There are numerous benefits to making a bus booking or bus ticket booking online through redBus such as 1) Book bus tickets with ease from the comfort of your home or workspace. 2) Quick and easy cancellation and rescheduling options. 3) Exclusive offers and cashback options. 4) M-ticket and e-ticket facilities are available. 4) Wide variety of bus operators, types of buses, and routes to choose from. 5) Impeccable customer service. 5) Lower prices. Visit the redBus website or download the app to see the benefits of making a bus ticket booking.
+                    </p>
+                </div>
+                <div class="col-6" style="padding: 0px 50px ;font-size: 15px;">
+                    <h5><strong>Q: Where can I view the amenities available on a bus before I make my bus booking?</strong></h5>
+                    <p>A: After entering your route details and clicking the “Search Buses” button, a list of available buses and bus timings will be displayed. The amenities will be displayed right under the name of the bus operator under each listed option that’s displayed. Click on the “plus sign” to view every amenity available on that bus. You can even customize your search by selecting the amenities that you’re looking for by using the filters that are available.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-6" style="padding: 0px 50px ;font-size: 16px;">
+                    <h5><strong>Q: Can I get discount on my bus tickets?</strong></h5>
+                    <p>
+                        A: redBus offers discounts on bus tickets on various occasions. You just need to grab the perfect deal at the right time. Keep a check on redBus' Offer page and grab amazing discounts and deals on your bus ticket booking.
+                    </p>
+                </div>
+                <div class="col-6" style="padding: 0px 50px ;font-size: 16px;">
+                    <h5><strong>Q: Can I cancel my bus ticket?</strong></h5>
+                    <p>
+                        A: Yes, you can cancel your bus ticket on redBus. All you have to do is log in to the redBus website or app and follow the cancellation procedure. You can even call the customer care number of redBus to get your online bus booking canceled.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6" style="padding: 0px 50px ;font-size: 16px;">
+                    <h5><strong>Q: How many seats does a sleeper bus have?</strong></h5>
+                    <p>
+                        A: A sleeper bus in India generally has the capacity of 32 people. 32 Volvo sleeper berths in buses ensure comfort and convenient journey for longer distance.     
+                    </p>
+                </div>
+                <div class="col-6" style="padding: 0px 50px ;font-size: 16px;">
+                    <h5><strong>Q: Is it safer to travel by bus or by plane during COVID-19?</strong></h5>
+                    <p>
+                        A: Though a flight might save some travel time as it does go from Point A to Point B a lot faster than a bus, it is advisable to travel by bus instead. If a passenger wishes to travel via airplane, they would have to get to the terminal early and wait for a long time before boarding a flight. There is a risk of infection as the air in the plane is circulated within the sealed tube and could pose a danger if an asymptomatic passenger does carry the virus onboard. With a bus, the passenger can wait in their vehicle before boarding the bus, and therefore, crowding at a boarding point is significantly reduced. Passengers can even keep their windows open to ensure that fresh air is circulated in the bus. Measures followed on Safety+ buses considerably minimize the chance of contracting the virus on a bus than an airplane.
+                    </p>
+                </div>
+            </div>                
+        </div>
+         <br><br>    
+
+
+        <div class="container mt-3">
+            <h5><strong> State Government Bus Ticket Booking in India </strong></h5>   
+            <br>  
+            <div class="row link">
+                <div class="col-4"><a href="#">MSRTC</a></div>
+                <div class="col-4"><a href="#">APSRTC</a></div>
+                <div class="col-4"><a href="#">HRTC</a></div>
+            </div>
+            <div class="row link">
+                <div class="col-4"><a href="#">UPSRTC</a></div>
+                <div class="col-4"><a href="#">RSRTC</a></div>
+                <div class="col-4"><a href="#">GSRTC</a></div>
+            </div>
+            <div class="row link">
+                <div class="col-4"><a href="#">OSRTC</a></div>
+                <div class="col-4"><a href="#">PEPSU</a></div>
+                <div class="col-4"><a href="#">JKSRTC</a></div>
+            </div>            
+        </div>
+
+
+        <div class="container mt-5">
+            <h5><strong>Top routes for booking bus tickets in India</strong></h5>   
+            <br>        
+            <div class="row link">
+                <div class="col-4"><a href="#">Banglore to Hydrabad Bus</a></div>
+                <div class="col-4"><a href="#">DElhi to Manali Bus</a></div>
+                <div class="col-4"><a href="#">Mumbai to Goa Bus</a></div>
+            </div>
+            <div class="row link">
+                <div class="col-4"><a href="#">Pune to Goa Bus</a></div>
+                <div class="col-4"><a href="#">Banglore to Chennai Bus</a></div>
+                <div class="col-4"><a href="#">Delhi to Jaipur Bus</a></div>
+            </div>
+            <div class="row link">
+                <div class="col-4"><a href="#">Banglore to Goa Bus</a></div>
+                <div class="col-4"><a href="#">Pune to Mumbai Bus</a></div>
+                <div class="col-4"><a href="#">Banglore to Tirupathi Bus</a></div>
+            </div> 
+            <div class="row link">
+                <div class="col-4"><a href="#">Delhi to Chandigarh Bus</a></div>
+                <div class="col-4"><a href="#">Delhi to Chandigarh Bus</a></div>
+                <div class="col-4"><a href="#">Delhi to Jaipur Bus</a></div>
+            </div>
+            <div class="row link">
+                <div class="col-4"><a href="#">Mumbai To Goa Bus</a></div>
+                <div class="col-4"><a href="#">All Routes></a></div>
+            </div>                      
+        </div>
+
+
+          <div class="container mt-5">
+            <h5><strong>Popular Bus Travels Operators in India</strong></h5>   
+            <br>   
+            <div class="row link">
+                <div class="col-4"><a href="#">VRL Travels</a></div>
+                <div class="col-4"><a href="#">SRS Travels</a></div>
+                <div class="col-4"><a href="#">CharteredBus</a></div>
+            </div> 
+            <div class="row link">
+                <div class="col-4"><a href="#">Neeta Travels</a></div>
+                <div class="col-4"><a href="#">Orange Travels</a></div>
+                <div class="col-4"><a href="#">Sugama Tourist</a></div>
+            </div>  
+            <div class="row link">
+                <div class="col-4"><a href="#">Patel Travels</a></div>
+                <div class="col-4"><a href="#">Rathimeena Travels</a></div>
+                <div class="col-4"><a href="#">Morning StarTravels</a></div>
+            </div> 
+            <div class="row link">
+                <div class="col-4"><a href="#">Parveen Travels</a></div>
+                <div class="col-4"><a href="#">City Travels</a></div>
+                <div class="col-4"><a href="#">All Operators</a></div>
+            </div>             
+        </div>
+              
+
+          <div class="container mt-5">
+            <h5><strong>Popular Cities for Booking Bus Tickets Online in India</strong></h5>   
+            <br>       
+            <div class="row link">
+                <div class="col-4"><a href="#">Pune Bus Tickets</a></div>
+                <div class="col-4"><a href="#">Delhi BUs Tickets</a></div>
+                <div class="col-4"><a href="#">Kolkata Bus Tickets </a></div>
+            </div> 
+            <div class="row link">
+                <div class="col-4"><a href="#">Chennai Bus Tickets</a></div>
+                <div class="col-4"><a href="#">Hydrabad Bus Tickets</a></div>
+                <div class="col-4"><a href="#">Banglore Bus Tickets</a></div>
+            </div> 
+            <div class="row link">
+                <div class="col-4"><a href="#">Mumbai Bus Tickets</a></div>
+                <div class="col-4"><a href="#">All Cities></a></div>
+            </div> 
+    </div>       
+    <!-- Content Section completed -->
+
+
+
+    <div class="container-fluid mt-3" style="background-color: #f7f7f7;">
+
+        <div class="row d-flex">             
+            <div class="col-6 mt-5 ps-5">
+                <div class="v1">
+                <center>
+                    <h4><u style="height: 2px; text-decoration-color: red;"> TOP BUS BOOKING ROUTES </u></h4>
+                </center>
+                
+                <div class="fairDetails ps-5 pt-3">                           
+                    <label for="source">Select Source:</label>
+                    <select name="source" id="source">
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="banglore">Banglore</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="goa">Goa</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="hyderabad">Hyderabad</option>                    
+                    </select>
+                    
+                    <div class="row mt-4">
+                        <div class="col-3"><p>Route</p></div>
+                        <div class="col-3"><p>Fare(Starting)</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"><p>Ahmedabad to Udaipur</p></div>
+                        <div class="col-3"><p>INR 200</p></div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-outline-danger un">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"><p>Ahmedabad to Mumbai</p></div>
+                        <div class="col-3"><p>INR 398</p></div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-outline-danger">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"><p>Ahmedabad to Pune</p></div>
+                        <div class="col-3"><p>INR 400</p></div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-outline-danger">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"><p>Ahmedabad to Indore</p></div>
+                        <div class="col-3"><p>INR 270</p></div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-outline-danger">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"><p>Ahmedabad to Jamnagar</p></div>
+                        <div class="col-3"><p>INR 167</p></div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-outline-danger">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            </div>
+        
+                
+            <div class="col-6 mt-5 ps-5">
+                <center>
+                    <h5><u style="height: 2px; text-decoration-color: red;">M TICKET VS E TICKET VS COUNTER TICKET </u></h5>
+                </center>
+                <div class="ticket">
+                    <div class="row pt-3">
+                        <div class="col-3">
+                            <img src="images/M-ticket.png" alt="">
+                        </div>
+                        <div class="col-8 p-3 text-center">
+                            <p>An mticket is an SMS that is sent to your mobile after booking a bus ticket.</p>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-3">
+                            <img src="images/E-ticket.png" alt="">
+                        </div>
+                        <div class="col-8 p-2 text-center">
+                            <p>This is an electronic ticket issued and sent to your email after confirmation of your online booking.</p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-3">
+                            <img src="images/C-ticket.png" alt="">
+                        </div>
+                        <div class="col-8 p-2 text-center">
+                            <p>Counter Ticket is the hard copy of your bus ticket required while boarding the bus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container mt-5" style="background-color: #f7f7f7; border: 1px solid gray;">
+        <div class="row pt-4">  
+            <center>
+                <h5><u style="height: 2px; text-decoration-color: red;"> ONLINE BUS TICKET BOOKING VS OFFLINE BUS TICKET BOOKING</u></h5>
+            </center>
+            
+            <div class="col-6 mt-3 ps-5">
+                <div class="v1">
+                    <p>Hassle-free bus booking from anywhere & anytime</p>
+                    <p>Wide choice of bus seats, bus types & operators.</p>
+                    <p>Great offers and cashbacks on booking tickets</p>
+                    <p>Unique benefit for women seat selection</p>
+                    <p>24/7 Friendly Customer Care assistance</p>
+                </div>
+            </div>
+            <div class="col-6 mt-3 ps-5">
+                <p>Hassle of reaching bus counter & waiting in long queues</p>
+                <p>Not much choice suiting your preference</p>
+                <p>No discounts</p>
+                <p>No unique benefit for women</p>
+                <p>No Friendly assistance</p>
+            </div>
+        </div>
+    </div>
+          
+
+    <div class="container mt-5">
+        <h5><strong>Top Train Routes</strong></h5>   
+        <br>   
+        <div class="row link">
+            <div class="col-4"><a href="#">Coimbatore to Chennai Trains</a></div>
+            <div class="col-4"><a href="#">Chennai to Banglore Trains</a></div>
+            <div class="col-4"><a href="#">Pune to Mumbai Trains</a></div>            
+        </div>
+        <div class="row link">
+            <div class="col-4"><a href="#">Ahmedabad to Surat Trains</a></div>
+            <div class="col-4"><a href="#">Madurai to Chennai Trains</a></div>
+            <div class="col-4"><a href="#">Hyderabad to Vijayavada Trains</a></div>            
+        </div>
+    </div>
+       
+
+    <div class="container mt-5">
+        <h5><strong>Other Train Routes</strong></h5>   
+        <br>   
+        <div class="row link">
+            <div class="col-4"><a href="#">Delhi to Jaipur Trains</a></div>
+            <div class="col-4"><a href="#">Banglore to Mangalore Trains</a></div>
+            <div class="col-4"><a href="#">Delhi to Mumbai Trains</a></div>            
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <div class="container-fluid mt-5" style="background-color: #ededed;">
+        <div class="tophead pt-3">
+            <div class="row rhead">
+                <div class="col-2"><a href="">Top Bus Routes</a></div>
+                <div class="col-2"><a href="">Top Cities</a></div>
+                <div class="col-2"><a href="">Top RTC's</a></div>
+                <div class="col-2"><a href="">Other</a></div>
+                <div class="col-2"><a href="">Top RTC Bus Types</a></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-2"><a href="">Banglore to Chennai Bus</a></div>
+                <div class="col-2"><a href="">Hydrabad Bus Tickets</a></div>
+                <div class="col-2"><a href="">APSRTC</a></div>
+                <div class="col-2"><a href="">TSRTC</a></div>
+                <div class="col-2"><a href="">Shivshahi Bus</a></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-2"><a href="">Hyderabad to Banglore Bus</a></div>
+                <div class="col-2"><a href="">Banglore Bus Tickets</a></div>
+                <div class="col-2"><a href="">GSRTC</a></div>
+                <div class="col-2"><a href="">SBSTC</a></div>
+                <div class="col-2"><a href="">Shivneri Bus</a></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-2"><a href="">Pune to Banglore Bus</a></div>
+                <div class="col-2"><a href="">Chennai Bus Tickets</a></div>
+                <div class="col-2"><a href="">MSRTC</a></div>
+                <div class="col-2"><a href="">RSRTC</a></div>
+                <div class="col-2"><a href="">Amravathi Bus</a></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-2"><a href="">Mumbai to Banglore Bus</a></div>
+                <div class="col-2"><a href="">Pune Bus Tickets</a></div>
+                <div class="col-2"><a href="">TNSTC</a></div>
+                <div class="col-2"><a href="">Kerala RTC</a></div>
+                <div class="col-2"><a href="">INdra Bus</a></div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-2"><a href="">More>></a></div>
+                <div class="col-2"><a href="">More>></a></div>
+                <div class="col-2"><a href="">More>></a></div>
+                <div class="col-2"><a href="">More>></a></div>
+                <div class="col-2"><a href="">Garuda Bus</a></div>
+            </div>
+        </div>
+
+        <div class="operator  pt-5">
+            <span style="font-size: 13px; font-weight: bold;">Top Operators</span>
+            <div class="row d-flex">
+                <ul>
+                    <li><a href="">SRS Travels</a></li>
+                    <li><a href="">Evacay Bus</a></li>
+                    <li><a href="">Kallada Travels</a></li>
+                    <li><a href="">KPN Travels</a></li>
+                    <li><a href="">Orange Travels</a></li>
+                    <li><a href="">Praveen Travels</a></li>
+                    <li><a href="">Rajdhani Express</a></li>
+                    <li><a href="">VRL Travels</a></li>
+                    <li><a href="">Chartered Bus</a></li>
+                    <li><a href="">Bengal Tiger</a></li>
+                    <li><a href="">SRM Travels</a></li>
+                    <li><a href="">Infant Jesus Travels</a></li>
+                    <li><a href="">JBT Travels</a></li>
+                    <li><a href="">Shatabdi Travels</a></li>
+                    <li><a href="">Eagle Travels</a></li>
+                    <li><a href="">Kanker Roadways</a></li>
+                    <li><a href="">Komitla Travels</a></li>
+                    <li><a href="">Sri Krishna Travels</a></li>
+                    <li><a href="">HUmsafar Travels</a></li>
+                    <li><a href="">Mahasagar Travels</a></li>
+                    <li><a href="">Raj Express</a></li>
+                    <li><a href="">Sharma Travels</a></li>
+                    <li><a href="">Universal Travels</a></li>
+                    <li><a href="">Verma Travels</a></li>
+                    <li><a href="">Gujarat Travels</a></li>
+                    <li><a href="">Madhurai Radha Travels</a></li>
+                    <li><a href="">Patel Travels</a></li>
+                    <li><a href="">Paulo Travels</a></li>
+                    <li><a href="">Royal Travels</a></li>
+                    <li><a href="">Amarnath Travels</a></li>
+                    <li><a href="">Vaibhav Travels</a></li>
+                    <li><a href="">Ganesh Travels</a></li>
+                    <li><a href="">Jabbar Travels</a></li>
+                    <li><a href="">Jain Travels</a></li>
+                    <li><a href="">Manish Travels</a></li>
+                    <li><a href="">Pradhan Travels</a></li>
+                    <li><a href="">Jain Travels</a></li>
+                    <li><a href="">YBM Travels</a></li>                    
+                    <li><a href="">Hebron Travels</a></li>
+                    <li><a href="">Mahalaxmi Travels</a></li>
+                    <li><a href="">MR Travels</a></li>
+                    <li><a href="">Vivegam Travels</a></li>
+                    <li><a href="">VST Travels</a></li>
+                    <li><a href="">Jakhar Travels</a></li>
+                    <li><a href="">Kaleswari Travels</a></li>
+                    <li><a href="">Mahendra Travels</a></li>
+                    <li><a href="">Neeta Travels</a></li>
+                    <li><a href="">Yamani Travels</a></li>
+                    <li><a href="">Arthi Travels</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-light" style="background-color: #1a232f; font-size: 13px;">
+        <div class="row flist pt-3 pb-5">
+            <div class="col-1 me-2">
+                <p>Book</p>
+                <a href="">Bus Tickets</a>
+                <a href="">Bus Hire</a>
+                <a href="">Tempo Traveller</a>
+                <a href="">Train Tickets</a>
+                <a href="">Cab Booking</a>
+            </div>
+            <div class="col-1 pe-0 ps-0">
+                <p>About redBus</p>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Mobile Version</a>
+                <a href="">Agent Registration</a>
+                <a href="">Careers</a>
+            </div>
+            <div class="col-1 pe-0 me-3">
+                <p>Traveller Tools</p>
+                <a href="">Track My Bus</a>
+                <a href="">Cancellation</a>
+                <a href="">Print E Ticket</a>
+                <a href="">FAQ</a>
+                <a href="">Sitemap</a>
+                <a href="">Offers</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="col-1 pe-0">
+                <p>Legal</p>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Cookie Policy</a>
+            </div>
+            <div class="col-1 pe-0">
+                <p>Apps</p>
+                <a href="">Redrail</a>
+                <a href="">Make My Trip App</a>
+                <a href="">Make My Trip UAE App </a>
+            </div>
+            <div class="col-1 pe-0">
+                <p>Global Site</p>
+                <a href="">India</a>
+                <a href="">Indonesia</a>
+                <a href="">Singapore</a>
+                <a href="">Malasiya</a>
+                <a href="">Colombia</a>
+                <a href="">Peru</a>
+            </div>        
+            
+            <div class="col-3 ms-5">
+                <img src="images/f_logo.png" alt=""><br><br>
+                <span>redBus is the world's largest <u>online bus ticket booking</u> service trusted by over 25 million happy customers globally. redBus offers bus ticket booking through its website,iOS and Android mobile apps for all major routes in India.</span>
+                <br>
+                <i class="fa fa-facebook mt-2" style="font-size: 20px;"></i>
+                <i class="fa fa-twitter ms-3 mt-2" style="font-size: 20px;"></i>
+                <br>
+                <span> &#169; 2022 ibibogroup All rights reserved</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer completed -->
+</body>
+</html>

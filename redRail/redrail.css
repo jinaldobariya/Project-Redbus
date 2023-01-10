@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+}
+
+#background-image
+{
+	position: relative;
+
+}
+.sub-img
+{
+	position: absolute;
+	top: 30vh;
+}
+
+.tb-sec {
+	width: 100%;
+	height: auto;
+	border: 0px;
+}
+
+
+.step-1 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1rem 1.5rem 1rem 3rem;
+	height: 4.5rem;
+	background: transparent;
+	border: 2px solid black;
+	box-sizing: border-box;
+	border-radius: 12.5rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	width: 80%;
+}
+
+.footer {
+	background-color: #1b2330;
+}
+
+.footer h6 {
+	color: #797979;
+}
+
+.footer-ln {
+	list-style: none;
+}
+
+.footer-ln a {
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: 200;
+}
+
+.fa-facebook-official {
+	font-size: 5vh;
+}
+
+.fa-twitter-square {
+	font-size: 5vh;
+}

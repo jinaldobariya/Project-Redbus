@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Adding Bootstrap CDN - Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Adding Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Adding CSS -->
+    <link rel="stylesheet" type="text/css" href="redbus.css" />
+    <title>redBus</title>
+
+    <script src="redbus.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- starting of nav bar -->
+
+      <div class="row bg-danger">
+        <div class="col-1 offset-1">
+          <img src="image/rb_logo.svg" alt="" class="img-fluid mt-3 mb-3" />
+        </div>
+        <div class="col-3">
+          <ul class="list-item mt-3">
+            <li class="list-inline-item me-3">
+              <a href="#" class="text-decoration-none text-white fw-light"
+                >Bus Tickets</a
+              >
+            </li>
+            <li class="list-inline-item ms-3 me-3">
+              <a href="#" class="text-decoration-none text-white fw-light"
+                >rYde
+              </a>
+            </li>
+            <li class="list-inline-item ms-3 me-3">
+              <a href="#" class="text-decoration-none text-white fw-light"
+                >redRail</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-1 offset-5">
+          <i
+            class="fa fa-user-circle-o pt-3 text-white"
+            style="font-size: 24px"
+          ></i
+          >&nbsp;<i
+            class="fa fa-angle-down text-white"
+            style="font-size: 24px"
+          ></i>
+        </div>
+      </div>
+
+      <div class="row">
+        <img
+          src="image\main-background.png"
+          alt=""
+          class="p-0"
+          id="background-image"
+        />
+        <section class="row sub-img">
+          <section class="col-12  img-sec">
+            <section class="row box-colm">
+              <section class="col-2 shadow offset-2 p-0">
+                <input type="text" class="tb-sec p-1" placeholder="FROM" />
+              </section>
+              <section class="col-2 shadow p-0">
+                <input type="text" class="tb-sec p-1" placeholder="TO" />
+              </section>
+              <section class="col-2 shadow p-0">
+                <input
+                  type="date"
+                  id="date"
+                  class="tb-sec p-1"
+                  placeholder="DATE"
+                />
+              </section>
+              <section class="col-2 shadow p-0">
+                <input
+                  type="button"
+                  class="btn btn-block btn-danger text-white tb-sec border-light"
+                  id="sec-but"
+                  value="SEARCH BUSES"
+                />
+              </section>
+            </section>
+          </section>
+        </section>
+      </div>
+    </div>
+
+
+    <!-- 3 cards -->
+    <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <center>
+                  <h2 class="text-danger">IRCTC authorised Ticket Booking</h2>
+              </center>
+              <div class="row">
+                  <div class="col-12">
+                      <center>Book IRCTC Train Tickets on redRail and enjoy simple & superfast booking process with no
+                          service fee + no payment gateway charge.</center>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="row">
+                  <div class="col-4">
+                      <img src="image\partner.png" alt="" class="img-fluid mt-3 mb-3" />
+                  </div>
+                  <div class="col-8">
+                      <p><b>Authorised IRCTC Partner</b></p>
+                      <p class="text-dark">Book your train tickets with confidence</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="row">
+                  <div class="col-4">
+                      <img src="image\support.png" alt="" class="img-fluid mt-3 mb-3" />
+                  </div>
+                  <div class="col-8">
+                      <p><b>Dedicated Customer Support</b></p>
+                      <p class="text-dark">Get dedicated customer support for all your queries</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="row">
+                  <div class="col-4">
+                      <img src="image\refunds.png" alt="" class="img-fluid mt-3 mb-3" />
+                  </div>
+                  <div class="col-8">
+                      <p><b>Instant Refunds</b></p>
+                      <p class="text-dark">Get Instant Refunds on your UPI payments</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- mobile -->
+
+  <div class="row">
+      <div class="col-md-12 mt-3">
+          <h1 class="text-center">Download App</h1>
+      </div>
+  </div>
+  <div class="row mt-5">
+      <div class="col-md-6">
+          <div class="step-list ps-5 pt-5 ms-5">
+              <div class="step-1" id="step1" onclick="myFunction(0)">
+                  <span class="step-number  text-danger">Step: 1</span>&nbsp;
+                  <span>Visit redRail and Choose Journey Date</span>
+              </div>
+              <div class="step-1" id="step2" onclick="myFunction(1)">
+                  <span class="step-number text-danger">Step: 2</span>&nbsp;
+                  <span>Select Class and Look for Available Trains</span>
+              </div>
+              <div class="step-1" id="step3" onclick="myFunction(2)">
+                  <span class="step-number text-danger">Step: 3</span>&nbsp;
+                  <span>Add IRCTC User ID and Passenger Information</span>
+              </div>
+              <div class="step-1" id="step4" onclick="myFunction(3)">
+                  <span class="step-number text-danger">Step: 4</span>&nbsp;
+                  <span>Choose a Method for Payment</span>
+              </div>
+              <div class="step-1" id="step5" onclick="myFunction(4)">
+                  <span class="step-number text-danger">Step: 5</span>&nbsp;
+                  <span>Enter IRCTC Password to Confirm Booking</span>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="img-div">
+              <img src="image/mob1.png" alt="" id="mob-imgs" class="img-fluid">
+          </div>
+      </div>
+  </div>
+
+  <!-- questions -->
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>How can I complete an online train ticket booking with redRails?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">Booking a train ticket online can be completed with ease in just a few simple steps. If you’re on the app, first click on the “redRails” icon that’s displayed on your screen. Enter the source and destination locations along with the date of travel. Once done, a list of trains operating on your route will be displayed. Select the train and class of your choice, select the boarding and destination stations, enter the details of the passenger and complete the payment. You can download the ticket and the invoice once your payment has been processed.</p>
+                </div>
+             </div>
+        </div>
+     </div><hr>
+</div>
+
+<div class="container">
+  
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>Do I need to make an account to make an IRCTC train ticket booking online?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">Yes, and this has its advantages. This would help expedite the booking process when you have to enter details about the passenger and while completing the payment process.</p>
+                </div>
+             </div>
+        </div>
+        <hr>
+     </div>
+     <div class="container">
+   
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>How is redRails connected to redBus?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the bus industry, redBus aims to attain the same success in the train industry as well. A customer can view, book, and complete their payment of train tickets on the redBus app or page by clicking on the “redRails” option that’s provided.</p>
+                </div>
+             </div>
+        </div>
+     </div>
+</div>
+<hr>
+
+
+</div>
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>How is redRails connected to redBus?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the bus industry, redBus aims to attain the same success in the train industry as well. A customer can view, book, and complete their payment of train tickets on the redBus app or page by clicking on the “redRails” option that’s provided.</p>
+                </div>
+             </div>
+        </div>
+     </div><hr>
+</div>
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>How is redRails connected to redBus?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the bus industry, redBus aims to attain the same success in the train industry as well. A customer can view, book, and complete their payment of train tickets on the redBus app or page by clicking on the “redRails” option that’s provided.</p>
+                </div>
+             </div>
+        </div>
+     </div><hr>
+</div>
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>How is redRails connected to redBus?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the bus industry, redBus aims to attain the same success in the train industry as well. A customer can view, book, and complete their payment of train tickets on the redBus app or page by clicking on the “redRails” option that’s provided.</p>
+                </div>
+             </div>
+        </div>
+     </div><hr>
+</div>
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>How is redRails connected to redBus?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the bus industry, redBus aims to attain the same success in the train industry as well. A customer can view, book, and complete their payment of train tickets on the redBus app or page by clicking on the “redRails” option that’s provided.</p>
+                </div>
+             </div>
+        </div>
+     </div><hr>
+</div>
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>How is redRails connected to redBus?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the bus industry, redBus aims to attain the same success in the train industry as well. A customer can view, book, and complete their payment of train tickets on the redBus app or page by clicking on the “redRails” option that’s provided.</p>
+                </div>
+             </div>
+        </div>
+     </div><hr>
+</div>
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>How is redRails connected to redBus?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the bus industry, redBus aims to attain the same success in the train industry as well. A customer can view, book, and complete their payment of train tickets on the redBus app or page by clicking on the “redRails” option that’s provided.</p>
+                </div>
+             </div>
+        </div><hr>
+     </div>
+     <div class="container">
+   
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>How is redRails connected to redBus?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the bus industry, redBus aims to attain the same success in the train industry as well. A customer can view, book, and complete their payment of train tickets on the redBus app or page by clicking on the “redRails” option that’s provided.</p>
+                </div>
+             </div>
+        </div>
+     </div><hr>
+</div>
+
+
+
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-12">
+            <p class="text-primary"><b>How is redRails connected to redBus?</b></p>
+             <div class="row">
+                <div class="col-12">
+                    <p class="text-dark">redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the bus industry, redBus aims to attain the same success in the train industry as well. A customer can view, book, and complete their payment of train tickets on the redBus app or page by clicking on the “redRails” option that’s provided.</p>
+                </div>
+             </div>
+        </div>
+     </div><hr>
+</div>
+
+<!-- footer -->
+
+<div class="container-fluid">
+<section class="footer ">
+  <section class="row pt-4">
+      <section class="col-2 col-sm-2 col-md-2 offset-1">
+          <ul class="">
+              <h6>About Redbus</h6>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/aboutus" target="_blank">About Us</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/contactus" target="_blank">Contact Us</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="//m.redbus.in" target="_blank">Mobile Version</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/mobile" target="_blank">redBus on Mobile</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/sitemap.html" target="_blank">Sitemap</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/OfferTerms" target="_blank">Offers</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/careers" target="_blank">Careers</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/values" target="_blank">Values</a></li>
+          </ul>
+      </section>
+      <section class="col-2 col-sm-2 col-md-2">
+          <ul class="">
+              <h6>About Redbus</h6>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/aboutus" target="_blank">About Us</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/contactus" target="_blank">Contact Us</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="//m.redbus.in" target="_blank">Mobile Version</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/mobile" target="_blank">redBus on Mobile</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/sitemap.html" target="_blank">Sitemap</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/OfferTerms" target="_blank">Offers</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/careers" target="_blank">Careers</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/values" target="_blank">Values</a></li>
+          </ul>
+      </section>
+      <section class="col-2 col-sm-2 col-md-2">
+          <ul class="">
+              <h6>About Redbus</h6>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/aboutus" target="_blank">About Us</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/contactus" target="_blank">Contact Us</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="//m.redbus.in" target="_blank">Mobile Version</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/mobile" target="_blank">redBus on Mobile</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/sitemap.html" target="_blank">Sitemap</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/OfferTerms" target="_blank">Offers</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/careers" target="_blank">Careers</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/values" target="_blank">Values</a></li>
+          </ul>
+      </section>
+      <section class="col-2 col-sm-2 col-md-2">
+          <ul class="">
+              <h6>About Redbus</h6>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/aboutus" target="_blank">About Us</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/contactus" target="_blank">Contact Us</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="//m.redbus.in" target="_blank">Mobile Version</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/mobile" target="_blank">redBus on Mobile</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/sitemap.html" target="_blank">Sitemap</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/info/OfferTerms" target="_blank">Offers</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/careers" target="_blank">Careers</a></li>
+              <li class="footer-ln"><a class="rdc-footer-links" href="/values" target="_blank">Values</a></li>
+          </ul>
+      </section>
+      <section class="col-3 col-sm-3 col-md-3">
+          <section class="row">
+              <section class="col-3 col-sm-3 col-md-3">
+                  <img src="assets/redbus-logo/rb_logo_2.png" alt="" class="img-fluid">
+              </section>
+          </section>
+          <section class="row mt-2">
+              <p class="text-white">redBus is the world's largest <a class="footerDescLink text-decoration-none text-white fw-bold" href="https://www.redbus.in/bus-tickets">online bus ticket booking</a> service trusted by over 25 million happy customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile apps for all major routes.</p>
+          </section>
+          <section class="row mt-2">
+              <section class="col-2 col-sm-2 col-md-2">
+                  <a rel="nofollow" class="text-decoration-none text-white" target="_blank" href="https://www.facebook.com/redbus.in/"><span class="fa fa-facebook-official"></span></a>
+              </section>
+              <section class="col-2 col-sm-2 col-md-2">
+                  <a rel="nofollow" class="text-decoration-none text-white" target="_blank" href="https://twitter.com/redBus_in"><span class="fa fa-twitter-square"></span></a>
+              </section>
+          </section>
+          <section class="row mt-2">
+              <p class="text-white">
+                  <span>Ⓒ</span>
+                  <span>2022 ibibogroup All rights reserved</span></p>
+          </section>
+      </section>
+  </section>
+</section>
+</div>
+  </body>
+</html>
